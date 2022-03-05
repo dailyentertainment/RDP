@@ -3,10 +3,10 @@
   "description": "RDP ON HEROKU",
   "repository": "https://github.com/dailyentertainment/RDP",
   "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "keywords": ["node", "express", "static"]
+  "keywords": ["node", "express", "static"]}
   "env": {
      "NGROK_AUTH_TOKEN": {
       "description": "auth token",
       "value": ""
-    }
-}
+    }}
+
