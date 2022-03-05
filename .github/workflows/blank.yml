@@ -8,6 +8,16 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - uses: actions/checkout@v2
+    - uses: akhileshns/heroku-deploy@v3.12.12
+      with:
+        heroku_api_key: c4c3e1c2-4c9e-4041-9cc2-0b67beb6216f
+        heroku_app_name: rdptest23
+        heroku_email: bhuiyans119@gmail.com
+        usedocker: true
+        docker_heroku_process_type: web
+        stack: "container"
+        region: "us"
     - name: Download
       run: Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
     - name: Extract
