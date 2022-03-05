@@ -1,4 +1,4 @@
-From: windows-latest
+FROM: windows-latest
 RUN Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
 RUN Expand-Archive ngrok.zip
 RUN .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
